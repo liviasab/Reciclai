@@ -17,7 +17,8 @@ class EmpresaFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'nome' => $this->faker->name(),
+            'cpf'=> $this->faker->randomNumber(9)
         ];
     }
 }
