@@ -18,7 +18,9 @@ class EmpresaFactory extends Factory
     {
         return [
             'nome' => $this->faker->name(),
-            'cpf'=> $this->faker->randomNumber(9)
+            'cnpj'=> $this->faker->randomNumber(14),
+            'cep' => $this->faker->randomNumber(8),
+            'status' => $this->faker->semver(),          
         ];
     }
 }
