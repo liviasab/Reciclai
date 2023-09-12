@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nome');
             $table ->string('cnpj');
             $table ->string('cep');
-            $table ->boolean('status');
+            $table ->string('status');
             $table ->foreignId('user_id');
         });
     }

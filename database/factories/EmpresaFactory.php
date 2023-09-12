@@ -20,7 +20,8 @@ class EmpresaFactory extends Factory
             'nome' => $this->faker->name(),
             'cnpj'=> $this->faker->randomNumber(14),
             'cep' => $this->faker->randomNumber(8),
-            'status' => $this->faker->semver(),          
+            'status' => $this->faker->semver(),   
+            'user_id'=> User::all()->random()->id       
         ];
     }
 }
