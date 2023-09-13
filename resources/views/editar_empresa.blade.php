@@ -15,9 +15,9 @@
     @csrf
     @method('PATCH')
     <input type="text" name="nome" placeholder="nome" value="{{$empresa->nome}}">
-    <input type="text" name="cnpj" placeholder="cnpj" value="{{$empresa->tipo}}">
-    <input type="text" name="cep" placeholder="cep" value="{{$empresa->tipo}}">
-    <input type="text" name="status" placeholder="status" value="{{$empresa->tipo}}">
+    <input type="text" name="cnpj" placeholder="cnpj" value="{{$empresa->cnpj}}">
+    <input type="text" name="cep" placeholder="cep" value="{{$empresa->cep}}">
+    <input type="text" name="status" placeholder="status" value="{{$empresa->status}}">
     <input type="submit" value="add">
 </form>
 

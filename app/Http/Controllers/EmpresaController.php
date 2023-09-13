@@ -96,7 +96,7 @@ class EmpresaController extends Controller
      */
     public function destroy(Empresa $Empresa)
     {
-        $Empresa= Empresa::findOrFail($Empresa)->delete();
+        $Empresa=Empresa::findOrFail($Empresa)->delete();
         return redirect()->back();
     }
 }
