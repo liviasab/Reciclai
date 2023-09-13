@@ -82,19 +82,19 @@ class EmpresaController extends Controller
      */
     public function update(Request $request, $Empresa)
     {
-        $Empresa = Empresa::findOrFail ($Empresa);
-        $Empresa ->nome = $request ->nome;
-        $Empresa ->cnpj = $request ->cnpj;
-        $Empresa ->cep = $request ->cep;
-        $Empresa ->status = $request ->status;
-        $Empresa->update();
+        $EmpresaAlvo = Empresa::findOrFail ($Empresa);
+        $EmpresaAlvo ->nome = $request ->nome;
+        $EmpresaAlvo ->cnpj = $request ->cnpj;
+        $EmpresaAlvo ->cep = $request ->cep;
+        $EmpresaAlvo ->status = $request ->status;
+        $EmpresaAlvo->update();
         return redirect('/dashboard');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Empresa $Empresa)
+    public function destroy($Empresa)
     {
         $Empresa=Empresa::findOrFail($Empresa)->delete();
         return redirect()->back();

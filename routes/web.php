@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -30,15 +30,15 @@ Route::get('/dashboard', function () {
 //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 // });
 
-// Route::post('/add-empresa', [EmpresaController::class, 'store']);
-// Route::get('/editar-empresa/{id}', [EmpresaController::class, 'edit']);
-// Route::patch('/update-empresa', [EmpresaController::class, 'update'])->name('profile.edit');
-// Route::delete('/apagar-empresa/{id}', [EmpresaController::class, 'destroy']);
+ Route::post('/add-empresa', [EmpresaController::class, 'store']);
+ Route::get('/editar-empresa/{id}', [EmpresaController::class, 'edit']);
+ Route::patch('/update-empresa/{id}', [EmpresaController::class, 'update'])->name('empresa.edit');
+ Route::delete('/apagar-empresa/{id}', [EmpresaController::class, 'destroy']);
 
-Route::post('/add-empresa', [EmpresaController::class, 'store'])->name('profile.store');
-Route::get('/editar-empresa', [EmpresaController::class, 'edit']);//->name('profile.edit');
-Route::patch('/update-empresa', [EmpresaController::class, 'update']);//->name('profile.update');
-Route::delete('/apagar-empresa', [EmpresaController::class, 'destroy']);//->name('profile.destroy');
+//Route::post('/add-empresa', [EmpresaController::class, 'store'])->name('profile.store');
+//Route::get('/editar-empresa', [EmpresaController::class, 'edit'])->name('profile.edit');
+//Route::patch('/update-empresa', [EmpresaController::class, 'update']);//->name('profile.update');
+//Route::delete('/apagar-empresa', [EmpresaController::class, 'destroy']);//->name('profile.destroy');
 
 //  Route::middleware('auth')->group(function () {
 //      Route::get('/add-empresa', [EmpresaController::class, 'edit'])->name('profile.store');
