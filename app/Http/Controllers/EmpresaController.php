@@ -82,7 +82,7 @@ class EmpresaController extends Controller
      */
     public function update(Request $request, $Empresa)
     {
-        $EmpresaAlvo = Empresa::findOrFail ($Empresa);
+        $EmpresaAlvo = Empresa::findOrFail($Empresa);
         $EmpresaAlvo ->nome = $request ->nome;
         $EmpresaAlvo ->cnpj = $request ->cnpj;
         $EmpresaAlvo ->cep = $request ->cep;
@@ -93,6 +93,9 @@ class EmpresaController extends Controller
 
     /**
      * Remove the specified resource from storage.
+     * 
+     * @param  \App\Models\Alimento  $alAlimentoimento
+     * @return \Illuminate\Http\Response
      */
     public function destroy($Empresa)
     {

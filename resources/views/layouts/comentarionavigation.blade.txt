@@ -1,0 +1,11 @@
+                        Trecho apagado da linha 37
+                        
+                        <x-dropdown-link :href="route('profile.edit')">
+                            {{ __('Profile') }}
+                        </x-dropdown-link>
+
+                Trecho apagado da linha 83
+
+                <x-responsive-nav-link :href="route('profile.edit')">
+                    {{ __('Profile') }}
+                </x-responsive-nav-link>
