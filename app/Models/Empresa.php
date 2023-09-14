@@ -18,7 +18,11 @@ class Empresa extends Model
         'user_id',
     ];
 
-    public function Dono(){
+    public function donoDaEmpresa(){
         return $this->belongsTo(User::class,'user_id');
+    }
+
+    public function pontocoletas() {
+        return $this->hasMany(PontoColeta::class, 'pc_emp_id');
     }
 }
