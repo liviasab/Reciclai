@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EmpresaController;
+use App\Http\Controllers\PontoColetaController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Empresa;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,11 @@ Route::get('/dashboard', function () {
  Route::get('/editar-empresa/{id}', [EmpresaController::class, 'edit']);
  Route::patch('/update-empresa/{id}', [EmpresaController::class, 'update'])->name('empresa.edit');
  Route::delete('/apagar-empresa/{id}', [EmpresaController::class, 'destroy']);
+
+ Route::post('/add-pontocoleta', [PontoColetaController::class, 'store']);
+ Route::get('/editar-pontocoleta/{id}', [PontoColetaController::class, 'edit']);
+ Route::patch('/update-pontocoleta/{id}', [PontoColetaController::class, 'update'])->name('pontocoleta.edit');
+ Route::delete('/apagar-pontocoleta/{id}', [PontoColetaController::class, 'destroy']);
 
 //Route::post('/add-empresa', [EmpresaController::class, 'store'])->name('profile.store');
 //Route::get('/editar-empresa', [EmpresaController::class, 'edit'])->name('profile.edit');

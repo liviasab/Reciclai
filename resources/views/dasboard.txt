@@ -1,0 +1,26 @@
+<table> 
+                     @foreach($empresa->pontocoletas as $pontocoleta)
+                            <tr>
+                                <td>{{$pontocoleta->status}}</td>
+                                <td>{{$pontocoleta->latitude}}</td>
+                                <td>{{$pontocoleta->longitude}}</td>
+                                <td><form action="/apagar-pontocoleta/{{$pontocoleta->id}}" method= "post">
+
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" name="apagar"> apagar </button>
+                                </form>
+                                </td>
+                                <td>
+                                <a href="/editar-pontocoleta/{{$pontocoleta->id}}" method="GET"> editar</a>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </table>
+                    <form action="/add-pontocoleta" method="POST">
+                        @csrf
+                        <input type="text" name="status" placeholder="status">
+                        <input type="text" name="latitude" placeholder="latitude">
+                        <input type="text" name="longitude" placeholder="longitude">
+                        <input type="submit" value="add">
+                    </form>
