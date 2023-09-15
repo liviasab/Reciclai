@@ -50,12 +50,12 @@ Após se certificar de que todos os pré-requisitos estão instalados adequadame
 
 #1. Baixar este repositório clicando em `<code>`, Download ZIP e extrair;
 
-1. git clone;
-2. composer install;
-3. npm install;
-4. npm run dev;
+1. `git clone`;
+2. `composer install`;
+3. `npm install`;
+4. `npm run dev`;
 5. cp .env.example .env;
 6. editar o .env "Para acessar o banco de acordo com suas configurações";
-7. php artisan migrate;
-8. php artisan serve.
+7. `php artisan migrate`;
+8. `php artisan serve`.
 
