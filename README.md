@@ -48,13 +48,13 @@ Para que o aplicativo funcione em sua máquina, é necessário que algumas coisa
 
 Após se certificar de que todos os pré-requisitos estão instalados adequadamente, siga os seguintes passos no seu terminal:
 
-1. Clonar este repositório clicando usando o comando: 'git clone https://github.com/liviasab/Reciclai.git';
-2. Instalar as dependencias do composer com o comando: 'composer install';
-3. Instalar as dependencias do npm com o comando: 'npm install';
-4. Rodar o servidor npm com o comando : 'npm run dev';
-5. Fazer uma copia e renomear o arquivo ".env.example" com o comando: 'cp .env.example .env';
+1. Clonar este repositório clicando usando o comando: `git clone https://github.com/liviasab/Reciclai.git`;
+2. Instalar as dependencias do composer com o comando: `composer install`;
+3. Instalar as dependencias do npm com o comando: `npm install`;
+4. Rodar o servidor npm com o comando : `npm run dev`;
+5. Fazer uma copia e renomear o arquivo ".env.example" com o comando: `cp .env.example .env`;
 6. Editar o .env "Para acessar o banco de acordo com suas configurações";
-7. Criar as tabelas no seu database com o comando : 'php artisan migrate';
-8. Iniciar o servidor do php com o comando: 'php artisan serve';
+7. Criar as tabelas no seu database com o comando : `php artisan migrate`;
+8. Iniciar o servidor do php com o comando: `php artisan serve`;
 9. Acessar no navegador o ip e a porta que for exibido no terminal clicando no link exibido.
 
