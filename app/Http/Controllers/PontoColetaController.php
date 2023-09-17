@@ -44,7 +44,7 @@ class PontoColetaController extends Controller
             'status' => $request->status,
             'latitude' => $request->latitude,
             'longitude' => $request->longitude,
-            'pc_emp_id' => Auth::empresa()->user_id
+            'pc_emp_id' => empresa->id
         ]);
         return redirect('/dashboard');
     }

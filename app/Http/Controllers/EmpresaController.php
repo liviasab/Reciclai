@@ -46,7 +46,7 @@ class EmpresaController extends Controller
             'status' => $request->status,
             'user_id' => Auth::user()->id
         ]);
-        return redirect('/dashboard');
+        return redirect('/dashboardponto');
     }
 
     /**
