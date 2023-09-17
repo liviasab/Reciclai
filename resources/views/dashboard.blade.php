@@ -23,7 +23,7 @@
                              @foreach(Auth::user()->empresas as $empresa)
                                     <tr>
     
-                                        <td class="td">{{$empresa->nome}}</td>
+                                        <td>{{$empresa->nome}}</td>
                                         <td>{{$empresa->cnpj}}</td>
                                         <td>{{$empresa->cep}}</td>
                                         <td>{{$empresa->status}}</td>
