@@ -23,6 +23,6 @@ class Empresa extends Model
     }
 
     public function pontocoletas() {
-        return $this->hasMany(PontoColeta::class, 'pc_emp_id');
+        return $this->hasMany(PontoColeta::class,'pc_emp_id');
     }
 }

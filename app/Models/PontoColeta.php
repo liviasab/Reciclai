@@ -17,7 +17,7 @@ class PontoColeta extends Model
         'pc_emp_id',
     ];
 
-    public function Dono(){
+    public function donoDoPontoColeta(){
         return $this->belongsTo(Empresa::class,'pc_emp_id');
     }
 }

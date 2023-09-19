@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nome');
-            $table ->string('cnpj');
-            $table ->string('cep');
-            $table ->string('status');
-            $table ->foreignId('user_id');
+            $table->string('cnpj');
+            $table->string('cep');
+            $table->string('status');
+            $table->foreignId('user_id');
         });
     }
 

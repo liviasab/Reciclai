@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('status');
-            $table ->string('latitude');
-            $table ->string('longitude');
-            $table ->foreignId('pc_emp_id');
+            $table->string('latitude');
+            $table->string('longitude');
+            $table->foreignId('pc_emp_id');
         });
     }
 
